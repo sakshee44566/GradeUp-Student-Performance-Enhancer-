@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GradeUp</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link class="icon-logo" rel="icon" type="image/png" href="images/gp_logo.jpg">
+  </head>
+ 
+  <body class="bodyEle">
+    <div id="navBar" style="margin-bottom: 2cm;">
+      <button onclick="showHome()" id="hometab">HOME</button>
+      <button onclick="showTimetable()" id="tt_tab">TIMETABLE</button>
+      <button onclick="showContact()" id="contact_tab">CONTACT US</button>
+    </div>
+    <div id="home_tab" style="font-size: small; font-family: Arial, Helvetica, sans-serif; color: rgb(3, 129, 255); margin-bottom: 1.3cm;">
+      <h1>INPUT YOUR DATA HERE</h1>
+    </div>
+    <div id="userInput">
+      <label for="studyHours" style="color: rgb(255, 94, 0);">Study Hours:</label>
+      <input type="decimal" id="studyHours" min="0" style="margin-right: 1cm;"/>
+      <label for="extracurricularHours" style="color: rgb(255, 94, 0);">Extracurricular Hours:</label>
+      <input type="decimal" id="extracurricularHours" min="0" style="margin-right: 1cm;"/>
+      <label for="technicalSkillsHours" style="color: rgb(255, 94, 0);">Technical Skills Hours:</label>
+      <input type="decimal" id="technicalSkillsHours" min="0" />
+    </div>
+    <form id="scheduleForm">
+      <table id="timetable"></table>
+      <div id="submitbut">
+        <button type="button" id="button1" onclick="submitSchedule()">
+          SUBMIT
+        </button>
+      </div>
+    </form>
+    <div id="messages"></div>
+    <div id="freeTimeOutput"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <!-- <span class="close">&times;</span> -->
+        <h2>Student Data</h2>
+        <p id="modalMessage1"></p>
+        <p id="modalMessage2"></p>
+        <p id="modalMessage3"></p>
+        <p id="modalMessage4"></p>
+        <p id="modalMessage5"></p>
+        <p id="modalMessage6"></p>
+        <button onclick="closeModal()" id="donebut">DONE</button>
+      </div>
+    </div>
+    
+    <div id="clone"></div>
+    <div id="contactUs" style="margin-bottom: 2cm;"></div>
+    
+    <script src="script.js"></script>
+    <!-- <div id="freeTimeOutput"></div> -->
+  </body>
+  <footer></footer>
+</html>

@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#userInput {
+  padding: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 1cm;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+.navBar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+p {
+  margin: 0;
+}
+
+#submitbut {
+  text-align: center;
+}
+
+#hometab{
+  padding: 14px;
+  margin-right: 0.8cm;
+  border-color: rgb(0, 154, 220);
+  background-color: rgba(142, 221, 255, 0.39);
+  color: rgb(251, 110, 3);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.icon-logo {
+  border-radius: 50%; /* Creates a curved border */
+  border: 2px solid #333; /* Adds a 2px solid border with a dark color */
+}
+
+#tt_tab{
+  padding: 14px;
+  margin-right: 0.8cm;
+  border-color: rgb(0, 154, 220);
+  background-color: rgba(142, 221, 255, 0.39);
+  color: rgb(251, 110, 3);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#contact_tab{
+  padding: 14px;
+  margin-right: 0.8cm;
+  border-color: rgb(0, 154, 220);
+  background-color: rgba(142, 221, 255, 0.39);
+  color: rgb(251, 110, 3);
+  font-weight: 600;border-radius: 5px;
+}
+
+#contact_tab:hover{
+  background-color: rgba(206, 240, 255, 0.39);
+  border: 2px solid;
+  border-color: rgb(0, 154, 220);
+  box-shadow: 3px 3px rgb(255, 227, 175);
+}
+
+#hometab:hover{
+  background-color: rgba(206, 240, 255, 0.39);
+  border: 2px solid;
+  border-color: rgb(0, 154, 220);
+  box-shadow: 3px 3px rgb(255, 227, 175);
+}
+
+#tt_tab:hover{
+  background-color: rgba(206, 240, 255, 0.39);
+  border: 2px solid;
+  border-color: rgb(0, 154, 220);
+  box-shadow: 3px 3px rgb(255, 227, 175);
+}
+p{
+  font-size: larger;
+  margin-bottom: 1cm;
+  color: rgb(9, 57, 147);
+}
+#button1 {
+  padding: 14px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 2px solid;
+  border-color: rgb(255, 94, 0);
+  color: rgb(9, 57, 147);
+  background-color: rgb(255, 227, 175);
+  border-radius: 5px;
+  margin-top: 1cm;
+  margin-bottom: 2cm;
+  font-weight: 600;border-radius: 5px;
+}
+
+
+#button1:hover {
+  background-color: rgba(255, 228, 196, 0.623);
+  border: 2px solid;
+  border-color: rgb(255, 94, 0);
+  box-shadow: 4px 4px rgb(187, 216, 255);
+}
+#donebut{
+  padding: 14px;
+  margin-right: 0.8cm;
+  border-color: rgb(0, 154, 220);
+  background-color: rgba(142, 221, 255, 0.39);
+  color: rgb(251, 110, 3);
+  font-weight: 600;border-radius: 5px;
+  margin-top: 0.8cm;
+}
+
+#donebut:hover{
+  background-color: rgba(206, 240, 255, 0.39);
+  border: 2px solid;
+  border-color: rgb(0, 154, 220);
+  box-shadow: 3px 3px rgb(255, 227, 175);
+}
+
+#modalMessage1 {
+  font-weight: bold;
+  color: brown;
+}
+.free {
+  background-color: lightgreen;
+}
+.meal {
+  background-color: rgba(3, 179, 255, 0.67);
+}
+.class {
+  background-color: rgba(251, 110, 3, 0.697);
+}
+.other {
+  background-color: rgb(222, 255, 75);
+}
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  white-space: pre;
+  /* transform: translate(-50%, -50%); */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/* .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+#clone {
+  height: 100px;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
